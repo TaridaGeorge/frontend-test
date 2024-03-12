@@ -1,0 +1,14 @@
+<div
+  class="echart-wrapper"
+  [style.min-height.px]="minHeight !== 0 ? minHeight : null"
+  [style.min-width.px]="minWidth !== 0 ? minWidth : null"
+  [style.height.px]="height !== 0 ? height : null"
+  [style.width.px]="width !== 0 ? width : null"
+>
+  <div
+    echarts
+    [options]="chartOptions"
+    (chartInit)="onChartInit($event)"
+    style="flex: 1"
+  ></div>
+</div>
