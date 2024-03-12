@@ -41,7 +41,7 @@ export class ChartComponent
   }
 
   getDescription(): string {
-    return 'Test chart';
+    return 'Descriere chart: acest chart este doar un test!!!';
   }
 
   getFilters(): BaseInsightWidgetDataFilter[] {
